@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Alt-texter</h1>
+					<h3>En presentation om hur man formulerar dessa</h3>
+					<p>
+						<small>Created by <a>Alex Lindström</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Vad är en alt-text?</h2>
+					<p class="fragment">
+						En alt-text är ett attribut som man lägger i en image tag för att kunna beskriva bilden på webbsidan.
+					</p>
+
+				</section>
+				
+				<section>
+					<h2>Utforma en bra alt-text</h2>
+
+					<img class="fragment" width="178" height="238" src="http://1.bp.blogspot.com/-ucQ3nCriNgE/T492iZQ6LYI/AAAAAAAAJzk/cK8eyjIbiZY/s1600/scarf-attack-guy.jpg" alt="Scarf guy">
+
+				</section>
+				
+				<section>
+					<h2>Skriva utförligt och detaljerat</h2>
+					
+					<img class="fragment" width="178" height="238" src="http://www.skogsindustrierna.org/MediaBinaryLoader.axd?MediaArchive_FileID=d02117a2-4176-45ce-8310-9376c3fe4151&FileName=G%C3%B6ran-Persson_mindre.png" alt="Scarf guy">
+
+				</section>
+				<section>
+					<h2>Undersök</h2>
+				</section>
+				
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h3 class="fragment">
+						Var kortfattad
+					</h3>
+
+					<h3 class="fragment">
+						Var tydlig
+					</h3>
+
+					<h3 class="fragment">
+						Exempel
+					</h3>
+					<p class="fragment">
+					Bild på ett träd - bra
+					</p>
+					<p class="fragment">
+					Bild på ett Knobthorn träd - bättre
+					</p>
+					<p class="fragment">
+					Bild på ett 10 meter högt knobthorn träd med mestadels gröna löv men en hel del gula också, ser gammalt och murket ut.. - Alldeles för lång beskrivning.
+					</p>
+					
+				</section>
+				
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+				
+					<h3 class="fragment">
+						Tänk på dina besökare i första hand
+					</h3>
+					
+					<h3 class="fragment">
+						Tänk på sökmotorerna
+					</h3>
+					
+					
+				</section>
+				
+				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+				
+					<h3 class="fragment">Inte bara för sökmotorn</h3>
+
+					<h3 class="fragment">Var inte långdragen</h3>
+
+				</section>
+				
+				<section>
+					<h1>Frågor?</h1>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>av Alex Lindström</h3>
+				</section>
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
